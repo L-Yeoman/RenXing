@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true">
+    <include layout="@layout/base_actionbar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/text_gray">
+
+        <EditText
+            android:background="@null"
+            android:hint="@string/info_inputPhoneNumb"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:inputType="phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cpl_editText"
+            android:layout_alignParentLeft="true"
+            android:maxLength="11"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_toLeftOf="@+id/cpl_cancel"
+            android:layout_toStartOf="@+id/cpl_cancel" />
+
+        <TextView
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/info_button_cancel"
+            android:id="@+id/cpl_cancel"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
+

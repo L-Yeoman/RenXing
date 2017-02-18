@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<com.dldzkj.app.renxing.customview.RefreshListView
+    android:id="@+id/list"
+    android:layout_above="@+id/bottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@null"
+    android:background="@color/app_gray_light"
+    android:scrollbars="none"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/bottom"
+        android:visibility="gone"
+        android:background="@color/app_gray_light"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/select_all"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="17sp"
+            android:textColor="@color/app_content_font"
+            android:text="全选"/>
+        <TextView
+            android:id="@+id/delete_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/app_content_font"
+            android:textSize="17sp"
+            android:text="删除"/>
+    </LinearLayout>
+</RelativeLayout>

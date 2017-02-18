@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:background="@android:color/black" >
+    <ImageView
+        android:id="@+id/nf_album"
+        android:scaleType="fitXY"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/nf_title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/nf_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxEms="8"
+                    android:singleLine="true"
+                    android:text="@string/music_list_non"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <Button
+                        android:id="@+id/nf_close"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"                    
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/cha" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+           
+
+        </LinearLayout>
+        
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ff3c3c3c"
+            />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+				 <LinearLayout
+				android:id="@+id/nf_layout_last"     
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/nf_last"
+                    android:focusable="false"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/last"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    />
+                </LinearLayout>
+
+                <TextView             
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="#ff3c3c3c" />
+                <LinearLayout
+                    android:id="@+id/nf_layout_play"  
+	                android:layout_width="0dp"
+	                android:layout_height="match_parent"
+	                android:layout_weight="1"
+	                android:gravity="center"
+                >
+                 <ImageView
+                    android:id="@+id/nf_play"
+                    android:focusable="false"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                     android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    />
+                 </LinearLayout>
+                  <TextView             
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                     android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="#ff3c3c3c" />
+					<LinearLayout
+					android:id="@+id/nf_layout_next"      
+	                android:layout_width="0dp"
+	                android:layout_height="match_parent"
+	                android:layout_weight="1"
+	                android:gravity="center"
+              		  >
+	                  <ImageView
+	                      android:id="@+id/nf_next"
+	                      android:focusable="false"
+	                      android:layout_width="20dp"
+	                      android:layout_height="20dp"
+	                      android:background="@drawable/next"
+	                      android:layout_marginLeft="10dp"
+	                   	  android:layout_marginRight="5dp"
+	                      />
+	                  </LinearLayout>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/app_gray_light"
+            android:orientation="vertical">
+
+            <include layout="@layout/base_actionbar"></include>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/et_send_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:hint="标题"
+                    android:paddingBottom="16dp"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp"
+                    android:paddingTop="16dp"
+                    android:singleLine="true"
+                    android:textColor="#666666"
+                    android:textColorHint="#666666"
+                    android:textSize="17sp" />
+
+                <View
+                    android:id="@+id/et_send_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/et_send_title"
+                    android:background="@color/text_gray" />
+
+                <EditText
+                    android:id="@+id/et_send_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/send_click_layout"
+                    android:layout_below="@id/et_send_line"
+                    android:background="@android:color/white"
+                    android:gravity="left"
+                    android:hint="内容"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#666666"
+                    android:textColorHint="#666666"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:id="@+id/send_click_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/white"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="18dp"
+                        android:paddingTop="10dp">
+
+                        <CheckBox
+                            android:id="@+id/toggle"
+                            style="@style/CustomCheckboxTheme"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@id/toggle"
+                            android:text="匿名发表"
+                            android:textColor="#666666"
+                            android:textSize="17sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/faces_btn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/ic_smile_icon" />
+
+                            <ImageView
+                                android:id="@+id/pics_btn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/ic_add_photo" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <FrameLayout
+                        android:id="@+id/bottom_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/need_pics"
+                            android:layout_width="match_parent"
+                            android:layout_height="240dp"
+                            android:visibility="gone">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/pics_listview"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scrollbars="none"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/iv_noDate"
+                                android:layout_width="88dp"
+                                android:layout_height="132dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_add_photo2" />
+
+                            <TextView
+                                android:id="@+id/pics_tips"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="20dp"
+                                android:gravity="center"
+                                android:text="最多可以添加10张图"
+                                android:textColor="@color/Setting_text_litte"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                        <com.dldzkj.app.renxing.customview.FaceLayout
+                            android:id="@+id/acl_face_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:background="@color/app_gray_light"
+                            android:visibility="gone" />
+                    </FrameLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+</ScrollView>

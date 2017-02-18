@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_gravity="top"
+                android:layout_height="60dp"
+                android:layout_width="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/splash_bg"
+                android:id="@+id/ci_header" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="深夜井盖"
+                android:id="@+id/ci_name"
+                android:textSize="14sp"
+                android:textColor="@color/black_text"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2015-6-21"
+                android:id="@+id/ci_time"
+                android:textSize="10sp"
+                android:textColor="@color/store_tab"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="水电费第三方接收到回复上帝多少级付款哈是滴回复屌丝覅说得hi粉丝帝 i换肤多样化范德萨的股份第三方第三方盛大富翁少个人规划"
+                android:id="@+id/ci_comment"
+                android:paddingTop="10dp"
+                android:paddingRight="5dp"
+                android:textSize="14sp"
+                android:textColor="@color/app_content_font"
+                android:layout_below="@+id/ci_name"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="90dp"
+        android:background="@color/text_gray"
+        android:layout_below="@+id/ci_comment"/>
+
+</LinearLayout>

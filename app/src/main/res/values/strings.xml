@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2015 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+-->
+
+<resources>
+    <string name="app_name">任性</string>
+
+  <string name="cheese_ipsum">Jarlsberg lancashire edam. Dolcelatte hard cheese brie st. agur blue
+    cheese caerphilly bavarian bergkase cheese and biscuits mascarpone. Cheeseburger swiss bavarian
+    bergkase cream cheese fromage frais cheesy feet port-salut airedale. St. agur blue cheese rubber
+    cheese caerphilly cheddar cheesecake cream cheese manchego lancashire. Roquefort squirty cheese
+    the big cheese.</string>
+  <string name="checkin">Checkin</string>
+  <string name="menu_settings">圈子</string>
+  <string name="menu_more">更多</string>
+  <string name="menu_rule">规则</string>
+  <string name="menu_add">加入</string>
+  <string name="menu_write">发表</string>
+  <string name="sms_key">鼎良逗趣</string>
+  <!--个人中心-->
+  <string name="info_button_cancel">清除</string>
+  <string name="info_input_hint">输入昵称</string>
+  <string name="info_title">个人信息</string>
+  <string name="app_cancel">退出登录</string>
+  <string name="info_nick">昵称</string>
+  <string name="info_level">等级</string>
+  <string name="info_sex">性别</string>
+  <string name="info_birthday">生日</string>info_
+  <string name="info_area">地区</string>
+  <string name="info_sign">签名</string>
+  <string name="info_chengeKey">账号与安全</string>
+  <string name="info_chengePhone_title">手机号码</string>
+  <string name="info_input_nick">请填写昵称</string>
+  <string name="info_inputPhoneNumb">输入手机号码</string>
+  <string name="info_inputPhoneNumb_warning">请输入手机号码</string>
+  <string name="info_change_phoneNumb">修改手机号码</string>
+  <string name="info_change_password">修改密码</string>
+  <string name="info_sign_warning">签名不超过30个字</string>
+  <string name="info_nick_warning">昵称不能超过10个汉字或20个英文字符，支持中英文、数字、下划线</string>
+  <!-- 更新  apk -->
+  <string name="app_update_toast">服务出错，文件不存在</string>
+  <string name="insert_card">插入卡</string>
+  <string name="down_fail">下载失败，点击再次下载</string>
+  <string name="is_downing">正在下载</string>
+  <string name="is_positive">确定</string>
+  <string name="cancel">取消</string>
+  <string name="ble_tips">我知道了</string>
+  <string name="app_update_fast">马上更新</string>
+  <string name="app_update_ignore">暂不更新</string>
+  <string name="app_soft_update">软件更新</string>
+  <string name="app_have_update">有新版本</string>
+  <string name="more_update_newest">当前为最新版本</string>
+  <string name="Updating">版本更新</string>
+  <string name="model">模式</string>
+  <string name="Strength">强度</string>
+  <!-- 蓝牙设备 -->
+  <string name="select_model">请先选择模式</string>
+  <string name="ble_tips_content">购买蓝牙硬件产品即可连接\n否则无法使用酷炫功能</string>
+  <string name="ble_click_tip">点击转盘中心连接您的玩具</string>
+  <!-- 蓝牙设备 -->
+  <string name="Blue_scanner"> 扫描玩具中</string>
+  <string name="Blue_Blueconnected">玩具已连接</string>
+  <string name="ble_not_support">本玩具只支持Android4.3及其以上版本</string>
+  <string name="Blue_scannerover">扫描结束</string>
+  <string name="Blue_finishBlue"> 蓝牙设备初始化完成</string>
+  <string name="Blue_UnsupportBlue">您的手机不支持BLE</string>
+  <string name="Blue_connect4fail">连接失败</string>
+  <string name="Blue_launchBlueService"> 正在启动蓝牙服务   </string>
+  <string name="Blue_Scanner_connected">扫描到玩具</string>
+  <string name="Blue_Scanner_connected_name">名称 </string>
+  <string name="Blue_Scanner_connected_adress">地址</string>
+  <string name="Blue_connected_ui"> 玩具已连接,进入</string>
+  <string name="Blue_Start_Scanner">开始扫描</string>
+  <string name="Blue_Scanner_over_Nofind">扫描结束，未发现玩具</string>
+  <string name="Blue_disconnect_Blue">蓝牙服务已断开</string>
+  <string name="Blue_MakeSure_open_Blue">蓝牙初始化失败，请确认是否打开</string>
+  <string name="Blue_useless_Blue">获取服务失败</string>
+  <string name="Blue_useless_connecd">连接超时，可能其他手机已连接该玩具</string>
+  <string name="Blue_receive_UI">接收到UI数据</string>
+  <string name="Blue_System_version_is_too_low">系统版本过低</string>
+  <string name="ble_disconnect">连接已断开</string>
+  <string name="progress_tip">上传文字信息，请稍后...</string>
+  <!-- 反馈 -->
+  <string name="fb_title">标题...</string>
+  <string name="fb_content">内容...\n说点有趣的建议吧</string>
+  <string name="fb_no_title"> 标题不能为空</string>
+  <string name="fb_no_content"> 内容不能为空</string>
+  <string name="fb_no_select_pics"> 没有选择图片</string>
+  <string name="fb_max_select_0">  最多允许选择</string>
+  <string name="fb_max_select_1">  张图片</string>
+  <string name="fb_result_success">感谢您的反馈</string>
+  <string name="fb_result_fail"> 反馈失败 </string>
+  <!-- 音乐 -->
+  <string name="music_no_one">您的手机未找到播放音乐</string>
+  <string name="music_singer">歌手名</string>
+  <string name="music_song">歌曲名</string>
+  <string name="music_title">音乐模式</string>
+  <string name="music_list_songs">全部音乐</string>
+  <string name="music_list_play">播放列表</string>
+  <string name="music_list_fav">我喜欢的</string>
+  <string name="music_list_non">播放列表为空</string>
+  <string name="app_exit">再按一次返回键，退出程序</string>
+  <string name="preparing_card">正在准备SD卡</string>
+  <string name="no_storage_card">没有SD卡</string>
+  <string name="not_enough_space">没有足够的存储空间</string>
+  <!-- 关于逗趣 -->
+  <string name="gongneng">功能介绍</string>
+  <string name="yinsi">使用条款和隐私协议</string>
+  <string name="banquan">鼎良电子科技有限公司     版权所有</string>
+  <string name="copydeng">copyright@2014.All right.reserved</string>
+  <!--文章-->
+  <string name="comment_title">评论</string>
+  <string name="my_article">文章</string>
+  <string name="my_post">帖子</string>
+  <!--相册-->
+  <string name="add_photo">相册最多只可上传10张照片</string>
+  <string name="photo_title">相片</string>
+  <string name="photo_edit">编辑</string>
+  <string name="photo_delete">删除</string>
+  <string name="photo_cancel">取消</string>
+  <!--分享-->
+  <string name="weibo_oauth_regiseter">应用授权</string>
+  <string name="website">http://www.mob.com</string>
+  <string name="weibo_upload_content">分享图片</string>
+  <string name="wechat_client_inavailable">目前您的微信版本过低或未安装微信，需要安装微信才能使用</string>
+  <string name="qq_client_inavailable">QQ 版本过低或者没有安装，需要升级或安装QQ才能使用！</string>
+  <string name="sinaweibo">新浪微博</string>
+  <string name="qzone">QQ空间</string>
+  <string name="wechat">微信好友</string>
+  <string name="wechatmoments">微信朋友圈</string>
+  <string name="wechatfavorite">微信收藏</string>
+  <string name="qq">QQ</string>
+  <string name="instapaper_email">邮箱</string>
+  <string name="instapaper_pwd">密码</string>
+  <string name="instapaper_login">登录</string>
+  <string name="instapaper_logining">登录中…</string>
+  <string name="instapager_email_or_password_incorrect">Email或密码不正确</string>
+  <string name="share_to_qzone">分享到QQ空间</string>
+  <string name="share_to_qq">分享到QQ</string>
+  <string name="mingdao_share_content">网页分享</string>
+  <string name="share_to_qzone_default">来自%s的分享</string>
+  <string name="use_login_button">请改用“登录”按钮</string>
+  <string name="share_title">分享到...</string>
+  <string name="share_cancel">取消</string>
+  <string name="weixin_circle">朋友圈</string>
+  <string name="weixin">微信好友</string>
+  <string name="sina">新浪微博</string>
+
+  <string name="about_url">http://www.dldouqu.com:8012/about.aspx</string>
+  <string name="synchronousmode">同步模式</string>
+  <string name="freeclick">请随意点击屏幕</string>
+  <string name="low_power">电量低于10%，请充电</string>
+
+  <string name="device_model">玩具模式</string>
+  <string name="ui_Abnormal">ui数据异常，进入默认界面</string>
+  <!-- 选择图片模块-->
+  <string name="more_than_max">超过了上限</string>
+  <string name="preview">预览</string>
+  <string name="recent_photos">最近照片</string>
+  <string name="sure">确定</string>
+  <string name="select_photos">选择照片</string>
+  <string name="back">返回</string>
+  <string name="taking_pictures">拍摄照片</string>
+  <string name="max_img_limit_reached">不能选择超过%d个图像</string>
+</resources>

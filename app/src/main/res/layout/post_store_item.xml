@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="match_parent"
+       >
+
+        <CheckBox
+            android:button="@drawable/app_checkbox_style"
+            android:visibility="gone"
+            android:background="@null"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/checkBox" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/psi_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="15dp"
+        android:background="@color/White">
+       <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:text="New Text"
+            android:textSize="15sp"
+            android:id="@+id/postTitle"
+            android:textColor="@color/app_title_font"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/postTitle"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="15dp"
+            android:paddingBottom="15dp"
+            android:id="@+id/linearLayout2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="from"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:textSize="10sp"
+                android:singleLine="true"
+                android:textColor="@color/app_comment_title_font"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/userText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/postTitle"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="15dp"
+            android:paddingRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/linearLayout">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_comment" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="New Text"
+                android:textSize="10sp"
+                android:textColor="@color/bbs_bg_send_normal"
+                android:id="@+id/commentCount" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/linearLayout"
+            android:background="@color/app_gray_font" />
+    </RelativeLayout>
+</LinearLayout>

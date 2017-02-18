@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true">
+    <include layout="@layout/base_actionbar"
+        android:id="@+id/include2"/>
+     <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:layout_below="@+id/include2"
+        android:layout_marginTop="8dp"
+        android:layout_weight="0.35"
+        android:orientation="vertical" >
+      <!--  <android.support.v7.widget.RecyclerView
+        android:id="@+id/id_recyclerview"
+        android:divider="#ffff0000"
+        android:dividerHeight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></android.support.v7.widget.RecyclerView> -->
+     <GridView
+         android:id="@+id/mla_gridView"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:padding="5dp"
+         android:layout_centerVertical="true"
+               	android:horizontalSpacing="5dp"
+               	android:verticalSpacing="5dp"
+                 android:numColumns="3"
+                  >
+     </GridView>
+       </android.support.v4.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/text_gray"
+        android:gravity="center"
+        android:text="@string/photo_delete"
+        android:id="@+id/deleteView"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+         />
+
+
+</RelativeLayout>

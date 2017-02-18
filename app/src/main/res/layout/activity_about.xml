@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/ii_common_level1"
+        android:layout_width="fill_parent"
+        android:layout_height="48sp"
+        android:background="@color/app_theme" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back_white" />
+
+        <TextView
+            android:id="@+id/tv_levelTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="@color/White"
+            android:textSize="22sp" />
+    </RelativeLayout>
+<RelativeLayout 
+    android:id="@+id/wb_menu"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Setting_line"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:layout_alignParentBottom="true"
+    android:visibility="gone">
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wb_goback"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/huizuo"
+        android:padding="10dp"
+		android:clickable="false"/>
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wb_goforward"
+        android:layout_centerInParent="true"
+        android:src="@drawable/huiyou"
+        android:padding="10dp"
+        android:clickable="false"/>
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wb_refresh"
+        android:src="@drawable/shuaxin"
+        android:padding="10dp"
+         android:layout_alignParentRight="true"/>
+    
+</RelativeLayout>
+    <com.dldzkj.app.renxing.customview.ProgressWebView
+        android:id="@+id/web"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:layout_below="@id/ii_common_level1"
+        android:layout_above="@id/wb_menu"/>
+
+</RelativeLayout>

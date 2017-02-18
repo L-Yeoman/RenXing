@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true">
+    <include layout="@layout/base_actionbar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/text_gray">
+
+        <EditText
+            android:background="@null"
+            android:hint="@string/info_input_hint"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_alignParentLeft="true"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_toLeftOf="@+id/nl_cancel"
+            android:layout_toStartOf="@+id/nl_cancel" />
+
+        <TextView
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/info_button_cancel"
+            android:id="@+id/nl_cancel"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+           />
+    </RelativeLayout>
+
+    <TextView
+        android:padding="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/info_nick_warning"
+        android:textSize="14sp"
+        android:textColor="@color/app_content_font"
+         />
+</LinearLayout>

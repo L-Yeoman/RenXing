@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/center_top_color"
+        android:orientation="vertical">
+        <include layout="@layout/base_actionbar"></include>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appbar"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_send_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_bg_next_step_btn"
+                android:hint="手机号码"
+                android:paddingBottom="16dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:paddingTop="16dp"
+                android:singleLine="true"
+                android:textColor="#bbbbbe"
+                android:textColorHint="#bbbbbe"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_bg_next_step_btn">
+
+                <TextView
+                    android:id="@+id/get_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="16dp"
+                    android:text="获取验证码"
+                    android:textColor="@color/bbs_bg_send_normal"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_send_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/get_code"
+                    android:background="@null"
+                    android:hint="验证码"
+                    android:paddingBottom="16dp"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp"
+                    android:paddingTop="16dp"
+                    android:singleLine="true"
+                    android:textColor="#bbbbbe"
+                    android:textColorHint="#bbbbbe"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/btn_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/ic_bg_next_step_btn"
+                android:gravity="center"
+                android:paddingBottom="17dp"
+                android:paddingTop="17dp"
+                android:text="下一步"
+                android:textColor="#63616c"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/needLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:visibility="gone"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已有任性账号，"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/btn_goLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="登陆"
+                    android:textColor="@drawable/selector_font_regist_getcode"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

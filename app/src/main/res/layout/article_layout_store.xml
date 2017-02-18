@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+
+    <CheckBox
+        android:id="@+id/als_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="3dp"
+        android:button="@drawable/app_checkbox_style" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp" >
+        <com.dldzkj.app.renxing.customview.ArticleRoundCornerImageView
+            android:id="@+id/als_RoundCornerImage"
+            android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+            />
+        <TextView
+            android:id="@+id/als_titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/als_contentText"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

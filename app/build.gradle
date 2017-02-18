@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+    packagingOptions {
+        exclude 'AndroidManifest.xml'
+    }
+    defaultConfig {
+        applicationId "com.dldzkj.app.renxing"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'com.android.support:design:22.2.0'
+    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile 'com.android.support:cardview-v7:22.2.0'
+    compile 'com.android.support:recyclerview-v7:22.2.0'
+    compile 'com.jakewharton:butterknife:6.1.0'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'de.hdodenhof:circleimageview:1.3.0'
+    compile 'com.zhy:percent-support-extends:1.0.1'
+    compile 'de.greenrobot:eventbus:3.0.0-beta1'
+    compile 'com.bartoszlipinski.recyclerviewheader:library:1.2.0'
+    compile 'com.marshalchen.ultimaterecyclerview:library:0.3.10'
+    compile 'com.github.chenupt.android:dragtoplayout:1.2.1@aar'
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+
+    compile files('src/main/libs/blelib.jar')
+    compile files('src/main/libs/EasyCursor-0.1.1.jar')
+    compile files('src/main/libs/fastjson-1.1.34.android.jar')
+    compile files('src/main/libs/ksoap2-android-assembly-3.1.1-jar-with-dependencies.jar')
+
+    compile files('src/main/libs/ShareSDK-Core-2.5.0.jar')
+    compile files('src/main/libs/ShareSDK-QQ-2.5.0.jar')
+    compile files('src/main/libs/ShareSDK-QZone-2.5.0.jar')
+    compile files('src/main/libs/ShareSDK-SinaWeibo-2.5.0.jar')
+    compile files('src/main/libs/ShareSDK-Wechat-2.5.0.jar')
+    compile files('src/main/libs/ShareSDK-Wechat-Core-2.5.0.jar')
+    compile files('src/main/libs/ShareSDK-Wechat-Moments-2.5.0.jar')
+    compile files('src/main/libs/universal-image-loader-1.9.1-with-sources.jar')
+    compile files('src/main/libs/ksoap2-android-assembly-3.1.1-jar-with-dependencies.jar')
+    compile files('src/main/libs/xUtils-2.5.3.jar')
+}

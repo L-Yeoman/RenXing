@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2015 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+-->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dldzkj.app.renxing">
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="false" />
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.DesignDemo">
+        <activity android:name=".SplashAct"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name="com.dldzkj.app.renxing.activity.ArticleActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.dldzkj.app.renxing.activity.CommentActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.blue.ScanActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".SplashActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".EnterActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".customview.AvaterDialogActivity"
+            android:theme="@android:style/Theme.Translucent"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.Activity_About"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.blue.SceneListActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.ActivityBleScan" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.blue.BlueBeforeUIActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.blue.HappyClickActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.MusicList" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.New_Music" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.blue.BlueUI1" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.blue.BlueUI2" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.blue.BlueUI3" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.blue.BlueUI4" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.blue.BlueUI5" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.blue.BlueUI6New" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.blue.BlueUI7" android:screenOrientation="portrait"></activity>
+        <activity android:name=".MainActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".BaseActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".bbs.SendBBSActivity"  android:windowSoftInputMode="stateHidden|adjustResize" android:screenOrientation="portrait"></activity>
+        <activity android:name=".bbs.BBSEveryTypeActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.LoginActivity" android:screenOrientation="portrait"
+            android:launchMode="singleTask"></activity>
+        <activity android:name=".activity.RegistActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.GetVerficationCodeActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.ModifyPwdActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".bbs.BBSDetailsActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.PersonScoreActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.SettingActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.MyPostActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.ActivityBleReady" android:screenOrientation="portrait"></activity>
+        <!--我的收藏-->
+        <activity android:name=".activity.MyFavoritesActivity" android:screenOrientation="portrait"></activity>
+        <!--相册-->
+        <activity android:name=".activity.MyPhotoActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".cropview.CropImage"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.PhotoLook" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.TopActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".cropview.MonitoredActivity" android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <!--个人中心-->
+        <activity android:name=".activity.PersonalInfo" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.NickActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.SignActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.BirthdayActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.SafeActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.ChangePhoneActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.SelectCity" android:screenOrientation="portrait"></activity>
+
+
+
+        <!-- 选择多图-->
+        <activity
+            android:name="com.photoselector.ui.PhotoSelectorActivity" android:screenOrientation="portrait"
+            android:label="图片选择" >
+        </activity>
+        <activity
+            android:name="com.photoselector.ui.PhotoPreviewActivity" android:screenOrientation="portrait"
+            android:label="图片预览" >
+        </activity>
+        <activity
+            android:name="com.photoselector.ui.BasePhotoPreviewActivity" android:screenOrientation="portrait"
+            android:label="点击图片" >
+        </activity>
+        <!-- 	分享 -->
+        <activity android:name=".customview.ToShare" android:screenOrientation="portrait"
+            android:theme="@style/dialog"/>
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+
+            <!--
+            	Adapter表示一个继承自cn.sharesdk.framework.authorize.AuthorizeAdapter的类，
+            	这个类可以监听到页面的生命周期，也可以获取授权页面的各种UI控件。
+            	开发者可以通过继承AuthorizeAdapter，重写其方法，并获取各种UI来自定义这个页面的行为。
+            <meta-data android:name="Adapter" android:value="cn.sharesdk.demo.MyAdapter" />
+            -->
+            <!--
+            	Dropbox的SSO功能需要在此处添加一个对ACTION_VIEW事件的过滤器，其中的scheme是
+            	“db-”前缀再开发者应用的加上appKey。如果此过滤器不设置，则不能完成SSO功能授权
+            -->
+            <intent-filter>
+                <data android:scheme="db-7janx53ilz11gbs" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <!--
+            	如果集成QQ分享，或者使用QQ客户端来进行QQ空间的分享，须要在此处添加一个对ACTION_VIEW
+            	事件的过滤器，其中的scheme是“tencent”前缀再开发者应用的加上appId。如果此过滤器不设置，
+            	则分享结束以后不能得到正确的回调
+            -->
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <!--        微信回调 -->
+       <!-- <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait" />-->
+
+        <service android:name=".blelib.services.BluetoothLeService"></service>
+        <service android:name=".blelib.services.MusicService"></service>
+        <service android:name=".service.UpdateSevice"></service>
+    </application>
+
+</manifest>

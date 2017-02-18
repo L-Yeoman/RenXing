@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <com.dldzkj.app.renxing.customview.MyViewLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black">
+
+        <ImageView
+            android:id="@+id/img_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_scan_img2"
+            android:visibility="gone"/>
+        <ImageView
+            android:id="@+id/img_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_scan_img1"/>
+        <View
+            android:id="@+id/img_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_icon_light1"/>
+
+    </com.dldzkj.app.renxing.customview.MyViewLayout>
+
+    <TextView
+        android:id="@+id/tv_toast"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+   <!-- <RelativeLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/home_bg"
+       >
+
+        <FrameLayout
+            android:id="@+id/ble_pan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:layout_width="275dp"
+                android:layout_height="275dp"
+                android:layout_gravity="center"
+                android:src="@drawable/scan" />
+
+            <ImageView
+                android:id="@+id/im_scan"
+                android:layout_width="275dp"
+                android:layout_height="275dp"
+                android:layout_gravity="center"
+                android:src="@drawable/pict_bluetooth"/>
+
+            <ImageView
+                android:id="@+id/im_dian"
+                android:layout_width="275dp"
+                android:layout_height="275dp"
+                android:layout_gravity="center"
+                android:src="@drawable/act_radar_dian_03" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_toast"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ble_pan"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="@string/ble_click_tip"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>-->
+
+  <!--  <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#90000000" 
+        android:id="@+id/firstShowLayout" 
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/shou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/tips_first" />
+
+        <TextView
+            android:id="@+id/tips_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/shou"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/white_square"
+           android:paddingLeft="10dp"
+           android:paddingRight="10dp"
+           android:paddingTop="7dp"
+           android:paddingBottom="7dp"
+            android:text="@string/ble_tips"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shou"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:lineSpacingExtra="6dp"
+            android:text="@string/ble_tips_content"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+      
+
+    </RelativeLayout>-->
+
+</FrameLayout>

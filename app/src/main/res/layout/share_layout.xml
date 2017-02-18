@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/White">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="30dp"
+        android:text="分享到"
+        android:textColor="@color/black_text"
+        android:textSize="20sp"
+        android:id="@+id/sl_title" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp">
+
+        <RelativeLayout
+            android:id="@+id/sl_weixin_circle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/imageView"
+                android:src="@drawable/ic_share_1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView"
+                android:gravity="center_horizontal"
+                android:text="@string/weixin_circle"
+                android:padding="5dp"
+                android:textSize="11sp"
+                android:textColor="@color/black_text"
+                android:id="@+id/textView" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sl_weixin"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_share_2"
+                android:id="@+id/imageView3" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:gravity="center_horizontal"
+                android:text="@string/weixin"
+                android:padding="5dp"
+                android:textSize="11sp"
+                android:textColor="@color/black_text"
+                android:layout_below="@+id/imageView3"
+                android:id="@+id/textView2" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sl_qq"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/imageView4"
+                android:src="@drawable/ic_share_3"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView4"
+                android:singleLine="true"
+                android:gravity="center_horizontal"
+                android:text="@string/qq"
+                android:padding="5dp"
+                android:textSize="11sp"
+                android:textColor="@color/black_text"
+                android:id="@+id/textView3" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sl_sina"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/imageView5"
+                android:src="@drawable/ic_share_4"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView5"
+                android:singleLine="true"
+                android:gravity="center_horizontal"
+                android:text="@string/sina"
+                android:padding="5dp"
+                android:textSize="11sp"
+                android:textColor="@color/black_text"
+                android:id="@+id/textView4" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="取消"
+        android:padding="17dp"
+        android:textColor="@drawable/text_color_change"
+        android:background="@color/background_gray"
+        android:textSize="17sp"
+        android:id="@+id/sl_cancel"
+         />
+</LinearLayout>

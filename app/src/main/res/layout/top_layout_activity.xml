@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_theme">
+
+    <RelativeLayout
+        android:id="@+id/top_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <ImageView
+            android:id="@+id/lift_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_back" />
+  
+        <TextView
+            android:id="@+id/center_little"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/White"
+            android:textSize="19sp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/rigte_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+             android:textColor="@color/White"
+            android:text="TextView" 
+            android:gravity="center"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/rigte_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/cha" 
+            android:visibility="gone"/>
+
+
+      
+	<View 
+	    android:id="@+id/title_line"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0.2dp"
+	    android:background="#90ffffff"
+	    android:visibility="gone"
+	    android:layout_alignParentBottom="true"/>
+        <ImageView
+            android:id="@+id/rigte_img1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/lift_back"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/cha"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_below="@id/top_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </RelativeLayout>
+
+</RelativeLayout>

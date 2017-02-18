@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_show"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true">
+
+    <com.dldzkj.app.renxing.activity.blue.MyFramlayout
+        android:id="@+id/mfl_cicle"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:src="@drawable/ic_back" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_back"
+        android:textColor="@android:color/white"
+        android:text="请滑动屏幕控制玩具"
+        android:gravity="center"
+        android:textSize="13sp"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    android:layout_centerInParent="true">
+    <TextView
+        android:id="@+id/scene_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"/>
+    <TextView
+        android:id="@+id/scene_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="#EDDBCC"
+        android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/scene_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#EDDBCC"
+        android:lineSpacingExtra="3dp"
+        android:textSize="13sp"/>
+</LinearLayout>
+</RelativeLayout>

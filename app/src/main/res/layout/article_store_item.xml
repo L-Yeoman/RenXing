@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        >
+        <CheckBox
+            android:button="@drawable/app_checkbox_style"
+            android:background="@null"
+            android:visibility="gone"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/asi_checkBox" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:textSize="15sp"
+            android:textColor="@color/app_title_font"
+            android:id="@+id/asi_title"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="10sp"
+            android:textColor="@color/app_gray_font"
+            android:text="New Text"
+            android:id="@+id/asi_time"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+           />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="10sp"
+            android:textColor="@color/bbs_bg_send_normal"
+            android:text="119"
+            android:id="@+id/asi_like_count"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_like"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/asi_like_count"
+            android:layout_toStartOf="@+id/asi_like_count"
+            android:layout_marginBottom="21dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/imageView2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/app_gray_font"
+            android:layout_alignParentBottom="true"
+           />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/asi_title"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
